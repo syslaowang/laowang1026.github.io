@@ -2,7 +2,7 @@
 
 不以物喜 不以己悲
 
-                                                          <p>--共勉</p>
+                                                          --共勉
 
 I walk slowly, but I never fall back
 
@@ -10,17 +10,9 @@ Not pleased by external gains, not saddened by personal losses
 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 WeChat:
 <img src="https://github.com/syslaowang/syslaowang.github.io/blob/master/assets/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200331103222.jpg?raw=true" alt="GitHub" title="WeChat" width="200" height="200" />
-<br>
-<br>
 <br>
 <br>
 <br>
