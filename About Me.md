@@ -2,8 +2,7 @@
 
 不以物喜 不以己悲
 
-                                --共勉
-
+                                                          <p>--共勉</p>
 
 I walk slowly, but I never fall back
 
