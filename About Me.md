@@ -7,7 +7,7 @@
 
 I walk slowly, but I never fall back
 
-Not pleased, not to have compassion
+Not pleased by external gains, not saddened by personal losses
 
 
 <br>
