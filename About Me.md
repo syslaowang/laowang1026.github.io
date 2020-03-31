@@ -1,5 +1,10 @@
-我是一个失败者 无论从人生还是技术上
-这个博客是我的学习见证 我从一无所有到一事无成的见证
+我走得很慢，但是我从来不会后退
 
-I am a loser, both in life and technology
-This blog is my testimony of my learning from nothing to nothing
+不以物喜 不以己悲
+
+                                ---共勉
+
+
+I walk slowly, but I never fall back
+
+Not pleased, not to have compassion
