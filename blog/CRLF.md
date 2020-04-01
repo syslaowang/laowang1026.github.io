@@ -8,7 +8,7 @@ CRLF是Carriage-Return Line-Feed的缩写，意思是回车换行，就是回车
 我们在渗透测试过程中可以寻找我们可控返回包header的请求
 比如下面这个请求
 ```
-GET /test/demo.php?url=https://c1h2e1.github.io
+GET /test/demo.php?url=https://syslaowang.github.io/
 xxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx
 ```
