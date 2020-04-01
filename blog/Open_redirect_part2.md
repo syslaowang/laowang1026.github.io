@@ -1,7 +1,4 @@
 
-#	写在前面
-在技术学习中，用开阔的眼光看待安全问题会有不同的结论出现，我们本次文章所利用的思路源于国外的`hackerone`以及多个资源分享平台，文末会贴出链接，那么我们开始今天的URL跳转的进阶使用吧	(以后的博客质量会慢慢提升希望各位能多多提出建设性建议我的微信号:baiheming123456)
-
 #	START
 关于挖掘思路我相信各位都已经很熟悉了，寻找常见参数，或者使用谷歌dorking。例如：`inurl:redirectUrl=http site:target.com`我们在实战中可以利用burpsuite的搜索功能去寻找**30X**的响应码
 ![PIC](http://c1h2e1.oss-cn-qingdao.aliyuncs.com/image/redirect.png)
@@ -13,69 +10,65 @@
 +	307临时重定向
 +	308永久重定向
 
-我们寻找可能跳转的链接这一步就基本上完成了，那么问题来了，绝大部分的网站都是不允许直接跳转的。这样就再一次回到了我们上一篇文章中提到的跳转绕过了[URL跳转到Webview安全](https://c1h2e1.github.io/2018/12/06/url_redirect.html)
-我们可以参考上文中的一点点简单的思路。**BUT**这些思路在实战中远远不够用。所以我们衍生了新的思路
-我们假设URL basic版本就是`?url=https://c1h2e1.github.io`
-
 #	URL_Redirect PLUS
 如果你看过i春秋winway表哥的文章的话我相信对他URL的fuzz扩展思路一定很清楚了吧。我们这里就不放出文档了因为是小密圈的东西
 对于这个思路我们就理解为跳转参数的fuzz了
 我个人整理了一份乌云案例上的
 `Parameter Payload`下面奉上
 ```
-success=https://c1h2e1.github.io
-next=https://c1h2e1.github.io
-data=https://c1h2e1.github.io
-url=https://c1h2e1.github.io
-qurl=https://c1h2e1.github.io
-login=https://c1h2e1.github.io
-logout=https://c1h2e1.github.io
-ext=https://c1h2e1.github.io
-clickurl=https://c1h2e1.github.io
-goto=https://c1h2e1.github.io
-redirect_url=https://c1h2e1.github.io
-redirect=https://c1h2e1.github.io
-rit_url=https://c1h2e1.github.io
-forward_url=https://c1h2e1.github.io
-@https://c1h2e1.github.io
-forward=https://c1h2e1.github.io
-pic=https://c1h2e1.github.io
-callback_url=https://c1h2e1.github.io
-jump=https://c1h2e1.github.io
-jump_url=https://c1h2e1.github.io
-click?u=https://c1h2e1.github.io
-originUrl=https://c1h2e1.github.io
-origin=https://c1h2e1.github.io
-Url=https://c1h2e1.github.io
-desturl=https://c1h2e1.github.io
-dest=https://c1h2e1.github.io
-u=https://c1h2e1.github.io
-page=https://c1h2e1.github.io
-u1=https://c1h2e1.github.io
-action=https://c1h2e1.github.io
-action_url=https://c1h2e1.github.io
-Redirect=https://c1h2e1.github.io
-sp_url=https://c1h2e1.github.io
-service=https://c1h2e1.github.io
-recurl=https://c1h2e1.github.io
-j?url=https://c1h2e1.github.io
-url=//https://c1h2e1.github.io
-uri=https://c1h2e1.github.io
-u=https://c1h2e1.github.io
-allinurl:https://c1h2e1.github.io
-q=https://c1h2e1.github.io
-link=https://c1h2e1.github.io
-src=https://c1h2e1.github.io
-tc?src=https://c1h2e1.github.io
-linkAddress=https://c1h2e1.github.io
-location=https://c1h2e1.github.io
-go=https://c1h2e1.github.io
-burl=https://c1h2e1.github.io
-request=https://c1h2e1.github.io
-backurl=https://c1h2e1.github.io
-RedirectUrl=https://c1h2e1.github.io
-Redirect=https://c1h2e1.github.io
-ReturnUrl=https://c1h2e1.github.io
+success=https://syslaowang.github.io
+next=https://syslaowang.github.io
+data=https://syslaowang.github.io
+url=https://syslaowang.github.io
+qurl=https://syslaowang.github.io
+login=https://syslaowang.github.io
+logout=https://syslaowang.github.io
+ext=https://syslaowang.github.io
+clickurl=https://syslaowang.github.io
+goto=https://syslaowang.github.io
+redirect_url=https://syslaowang.github.io
+redirect=https://syslaowang.github.io
+rit_url=https://syslaowang.github.io
+forward_url=https://syslaowang.github.io
+@https://syslaowang.github.io
+forward=https://syslaowang.github.io
+pic=https://syslaowang.github.io
+callback_url=https://syslaowang.github.io
+jump=https://syslaowang.github.io
+jump_url=https://syslaowang.github.io
+click?u=https://syslaowang.github.io
+originUrl=https://syslaowang.github.io
+origin=https://syslaowang.github.io
+Url=https://syslaowang.github.io
+desturl=https://syslaowang.github.io
+dest=https://syslaowang.github.io
+u=https://syslaowang.github.io
+page=https://syslaowang.github.io
+u1=https://syslaowang.github.io
+action=https://syslaowang.github.io
+action_url=https://syslaowang.github.io
+Redirect=https://syslaowang.github.io
+sp_url=https://syslaowang.github.io
+service=https://syslaowang.github.io
+recurl=https://syslaowang.github.io
+j?url=https://syslaowang.github.io
+url=//https://syslaowang.github.io
+uri=https://syslaowang.github.io
+u=https://syslaowang.github.io
+allinurl:https://syslaowang.github.io
+q=https://syslaowang.github.io
+link=https://syslaowang.github.io
+src=https://syslaowang.github.io
+tc?src=https://syslaowang.github.io
+linkAddress=https://syslaowang.github.io
+location=https://syslaowang.github.io
+go=https://syslaowang.github.io
+burl=https://syslaowang.github.io
+request=https://syslaowang.github.io
+backurl=https://syslaowang.github.io
+RedirectUrl=https://syslaowang.github.io
+Redirect=https://syslaowang.github.io
+ReturnUrl=https://syslaowang.github.io
 ```
 这53个参数就是我们国内常用的参数了，我们可以通过他大量的进行fuzz寻找可用的参数
 
