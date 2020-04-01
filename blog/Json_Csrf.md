@@ -27,6 +27,7 @@
 
 </html>
 ```
+构造出的POST数据为
 ```
 {name: "attacker", email: "attacker@gmail.com", ignore_me: "=test"}
 ```
