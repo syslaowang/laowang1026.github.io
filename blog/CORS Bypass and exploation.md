@@ -122,5 +122,3 @@ _
 然后用safari访问一下看支不支持，之后注册这个子域名，然后就可以利用了
 `https://zzzz.ubnt.com=.evil.com/cors-poc`
 这里主要是利用了Safari浏览器支持特殊字符然后进行利用
-
-#每日的文章推送和周日的技术分享的在Pentest explorer
